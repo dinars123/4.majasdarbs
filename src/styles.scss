@@ -1,0 +1,395 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 24px;
+}
+
+h2 {
+  font-family: Roboto Condensed;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.4px;
+}
+
+.body3 {
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: gray;
+}
+
+label {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.Formcontainer {
+  max-width: 428px;
+  width: 100%;
+  background-color: #fff;
+  margin: auto;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 40px 40px 60px 0px rgba(0, 0, 0, 0.1);
+}
+
+.inputsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+.LabelPlusInput {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  width: 100%;
+}
+.inputClass {
+  padding: 12px 12px;
+  border-radius: 5px;
+  border: none;
+  background: #fafafa;
+  color: #bab9bd;
+  width: 100%;
+}
+.columnWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.signInButton {
+  width: 100%;
+  height: 48px;
+  color: #fff;
+  background: #651fff;
+  border-radius: 5px;
+  border: none;
+}
+.checkBox {
+  margin: 31px 0px;
+  justify-self: flex-start;
+}
+.googleAndFacebook {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.googleAndFacebookItem {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.googleAndFacebookItem img {
+  height: 24px;
+  width: 24px;
+}
+.separator {
+  height: 2px; /* Adjust the height as needed */
+  background-color: #ececee; /* Set the color */
+  width: 100%;
+}
+.Orcontinue {
+  margin-bottom: 10px;
+}
+
+.Formcontainer2 {
+  display: flex;
+  max-width: 665px;
+  width: 100%;
+  padding: 32px;
+  flex-direction: column;
+  gap: 32px;
+  margin: 200px auto;
+  background-color: white;
+  box-shadow: 40px 40px 60px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.wrapOf4inputs {
+  display: flex;
+  gap: 16px;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+@media (max-width: 550px) {
+  .wrapOf4inputs {
+    flex-wrap: wrap;
+  }
+}
+.wholeFormFlexColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.textarea1 {
+  display: flex;
+  height: 152px;
+  padding: 8px 14px 8px 12px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border: none;
+  background-color: #f3f3f5;
+  border-radius: 5px;
+  color: #bab9bd;
+}
+.textarealabel {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.secondformsubmit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  padding: 12px 48px;
+  border: none;
+  border-radius: 5px;
+  background-color: #651fff;
+  color: #ffffff;
+}
+@media (max-width: 550px) {
+  .secondformsubmit {
+    align-self: center;
+    width: 100%;
+  }
+}
+
+.formcontainer3 {
+  display: flex;
+  margin: 200px auto;
+  justify-content: center;
+}
+.formcontainer3__wrap {
+  display: flex;
+  max-width: 449px;
+  width: 70%;
+  padding: 32px;
+  flex-direction: column;
+  gap: 32px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 40px 40px 60px 0px rgba(0, 0, 0, 0.1);
+}
+.formcontainer3__contacts {
+  max-width: 216px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 46px 16px 32px 16px;
+  flex-basis: 30%;
+  background-color: #651fff;
+  color: white;
+  border-radius: 10px 0px 0px 10px;
+  box-shadow: 40px 40px 60px 0px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 550px) {
+  .formcontainer3__contacts {
+    display: none;
+  }
+  .formcontainer3__wrap {
+    width: 100%;
+  }
+}
+
+.formcontainer4 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: #fff;
+  max-width: 665px;
+  width: 100%;
+  padding: 32px;
+  gap: 32px;
+  box-shadow: 40px 40px 60px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 200px;
+  border-radius: 10px;
+}
+
+.formcontainer4__firstwrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.formcontainer4__orderlist {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+
+  flex-basis: 100%;
+}
+.formcontainer4__deliverywrap {
+  display: flex;
+  flex-basis: 100%;
+  gap: 16px;
+}
+
+.formcontainer4__deliverywrap__items {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+.smallwrap {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.wholeinputswrap {
+  display: flex;
+  gap: 8px;
+}
+.halveinputswrap {
+  display: flex;
+  align-self: flex-end;
+  gap: 8px;
+}
+.somecolumn {
+  flex-basis: 100%;
+}
+
+.seperator2 {
+  height: 2px; /* Adjust the height as needed */
+  background-color: #ececee; /* Set the color */
+  width: 100%;
+  display: none;
+}
+
+.formcontainer4__orderlist p {
+  margin-left: 40px;
+}
+@media (max-width: 550px) {
+  .formcontainer4__firstwrap {
+    flex-wrap: wrap;
+  }
+  .wholeinputswrap {
+    flex-wrap: wrap;
+  }
+  .smallwrap {
+    flex-direction: row;
+    gap: 15px;
+  }
+  .seperator2 {
+    display: block; /* or display: inline-block, depending on your needs */
+  }
+}
